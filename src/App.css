@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(5, 27, 0);
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  min-width: 2000px;
+  min-height: 1400px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.font-link {
+  font-family: "Viaoda Libre", cursive;
+}
+
+.title {
   color: white;
+  font-size: 85px;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+#container {
+  width: 550px;
+  height: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  background-color: rgba(5, 27, 0, 0.6);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#st {
+  margin: 20px;
+  color: white;
+  font-size: 35px;
+}
+
+.balance {
+  font-size: 55px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: white;
 }
