@@ -3,7 +3,7 @@ import AccountBalance from "./AccountBalance";
 import { Link } from "react-router-dom";
 import moment from "moment";
 
-class Debits extends Component {
+class Credits extends Component {
   constructor() {
     super();
     this.state = {
@@ -23,9 +23,7 @@ class Debits extends Component {
         return;
       }
 
-      this.props.onAdd(
-        this.state
-      );
+      this.props.onAdd(this.state);
 
       console.log(
         this.state.id,
@@ -34,18 +32,18 @@ class Debits extends Component {
         this.state.date
       );
 
-      this.setState({description: ""})
+      this.setState({ description: "" });
     };
 
     return (
       <div className="d-container">
-        <h1 className="d-title font-link">Debits</h1>
+        <h1 className="d-title font-link">Credits</h1>
 
         <div id="debit-c">
-          {this.props.debits.map((debit) => (
-            <h2 key={debit.id} className="font-link" id="d-c">
-              {debit.amount} | {debit.description} |{" "}
-              {debit.date.substring(0, 9)}
+          {this.props.credits.map((credit) => (
+            <h2 key={credit.id} className="font-link" id="d-c">
+              {credit.amount} | {credit.description} |{" "}
+              {credit.date.substring(0, 9)}
             </h2>
           ))}
         </div>
@@ -62,12 +60,14 @@ class Debits extends Component {
               id="but"
               type="number"
               placeholder="Add amount"
-              onChange={(e) => this.setState({ amount: parseInt(e.target.value) })}
+              onChange={(e) =>
+                this.setState({ amount: parseInt(e.target.value) })
+              }
             ></input>
             <input
               id="but"
               type="submit"
-              value="Add debit"
+              value="Add Credit"
               onClick={() => {
                 this.setState({ date: moment().format("YYYY-MM-DD") });
                 this.setState({ id: Math.floor(Math.random() * 10000) + 1 });
@@ -102,4 +102,4 @@ class Debits extends Component {
   }
 }
 
-export default Debits;
+export default Credits;

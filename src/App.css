@@ -33,7 +33,7 @@ img {
 }
 
 #container {
-  width: 550px;
+  width: 600px;
   height: auto;
   position: absolute;
   transform: translate(-50%, -50%);
