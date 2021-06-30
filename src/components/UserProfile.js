@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class UserProfile extends Component {
   render() {
     return (
-      <div id='container'>
+      <div id='container' className='U-P'>
         <h1 className='title font-link'>User Profile</h1>
 
         <div id='st' className='font-link'>Username: {this.props.userName}</div>

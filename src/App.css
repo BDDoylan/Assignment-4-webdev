@@ -68,7 +68,7 @@ img {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(39, 194, 0);
-  border-radius: 20px;       /* roundness of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid rgb(0, 0, 0);
 }
 
@@ -120,6 +120,20 @@ input:hover {
   margin: 20px;
   color: white;
   font-size: 35px;
+}
+
+.U-P {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  height: 600px !important;
+}
+
+.U-L {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  height: 200px !important;
+}
+
+#log {
+  margin-top: 25px;
 }
 
 #d-st {
