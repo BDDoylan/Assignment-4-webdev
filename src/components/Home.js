@@ -13,8 +13,15 @@ class Home extends Component {
         <div id="container">
           <h1 className="title font-link">Bank of React</h1>
 
-          <Link id='st' className="font-link" to="/userProfile">User Profile</Link>
-          <Link id='st' className="font-link" to="/login">Login</Link>
+          <Link id="st" className="font-link" to="/userProfile">
+            User Profile
+          </Link>
+          <Link id="st" className="font-link" to="/login">
+            Login
+          </Link>
+          <Link id="st" className="font-link" to="/debits">
+            Debits
+          </Link>
           <AccountBalance accountBalance={this.props.accountBalance} />
         </div>
       </div>

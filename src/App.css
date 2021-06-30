@@ -5,7 +5,7 @@
 
 body {
   background-color: rgb(5, 27, 0);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 img {
@@ -27,6 +27,11 @@ img {
   margin-top: 50px;
 }
 
+.d-title {
+  color: white;
+  font-size: 85px;
+}
+
 #container {
   width: 550px;
   height: auto;
@@ -38,7 +43,86 @@ img {
   background-color: rgba(5, 27, 0, 0.6);
 }
 
+.d-container {
+  width: 700px;
+  display: block;
+  height: 100%;
+  margin: 20px auto auto auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 30px;
+  padding-bottom: 40px;
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(53, 87, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(39, 194, 0);
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.debit-add {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#but {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(53, 87, 0);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 19px;
+  outline: none;
+}
+
+#but-1 {
+  border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  cursor: pointer;
+}
+
+input:hover {
+  background-color: rgb(0, 200, 10) !important;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(0, 0, 0);
+  opacity: 1; /* Firefox */
+}
+
+#debit-c {
+  color: white;
+  margin: 30px;
+}
+
+#d-c {
+  padding: 10px;
+}
+
 #st {
+  margin: 20px;
+  color: white;
+  font-size: 35px;
+}
+
+#d-st {
   margin: 20px;
   color: white;
   font-size: 35px;
